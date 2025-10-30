@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dbc25a6xb4vwf"
+path="res://.godot/imported/darkness music.wav-2c7937feb732361ef5df7e3c3570592b.sample"
+
+[deps]
+
+source_file="res://Arbol de Escenas/Menu/Assets/darkness music.wav"
+dest_files=["res://.godot/imported/darkness music.wav-2c7937feb732361ef5df7e3c3570592b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

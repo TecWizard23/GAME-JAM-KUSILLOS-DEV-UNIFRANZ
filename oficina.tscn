@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1dv2vqut0xd6"]
+
+[ext_resource type="Texture2D" uid="uid://dsuc2u0rn0bgs" path="res://Arbol de Escenas/Oficina/Assets/3-THE_OFFICE/1-OFFICE.png" id="1_qo6bi"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ajbn3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qo6bi")
+}],
+"loop": true,
+"name": &"oficina",
+"speed": 5.0
+}]
+
+[node name="Oficina" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(594, 330.00003)
+scale = Vector2(1, 0.9166667)
+sprite_frames = SubResource("SpriteFrames_ajbn3")
+animation = &"oficina"
