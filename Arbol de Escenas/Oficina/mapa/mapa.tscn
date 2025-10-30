@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bkb1m04yw0mxw"]
+
+[node name="Mapa" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 674.0
+offset_top = 263.0
+offset_right = 724.0
+offset_bottom = 310.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Button"]

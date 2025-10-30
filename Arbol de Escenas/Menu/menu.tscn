@@ -1,10 +1,9 @@
-[gd_scene load_steps=21 format=3 uid="uid://bg2j0lawbb7n0"]
+[gd_scene load_steps=20 format=3 uid="uid://bg2j0lawbb7n0"]
 
 [ext_resource type="Script" uid="uid://ddq68xtxmv3yn" path="res://Arbol de Escenas/Menu/menu.gd" id="1_cymlx"]
-[ext_resource type="Texture2D" uid="uid://dw7cgtss54emq" path="res://Arbol de Escenas/Menu/Assets/2-MENU_TWITCHING/1.png" id="2_vapdi"]
-[ext_resource type="Texture2D" uid="uid://gabw68r48mid" path="res://Arbol de Escenas/Menu/Assets/2-MENU_TWITCHING/2.png" id="3_f32lh"]
-[ext_resource type="Texture2D" uid="uid://b2jl8pj3lpug0" path="res://Arbol de Escenas/Menu/Assets/2-MENU_TWITCHING/3.png" id="4_gvwsu"]
-[ext_resource type="Texture2D" uid="uid://ch0a4tbaebr0u" path="res://Arbol de Escenas/Menu/Assets/2-MENU_TWITCHING/4.png" id="5_50cx3"]
+[ext_resource type="Texture2D" uid="uid://cwlgs664qnsl3" path="res://Arbol de Escenas/Menu/Assets/fotos silbador/1.png" id="2_yg8tr"]
+[ext_resource type="Texture2D" uid="uid://di8x3xajl2y8o" path="res://Arbol de Escenas/Menu/Assets/fotos silbador/2.png" id="3_u6ow0"]
+[ext_resource type="Texture2D" uid="uid://c8m2ee76c2vkv" path="res://Arbol de Escenas/Menu/Assets/fotos silbador/3.png" id="4_qx7j5"]
 [ext_resource type="Texture2D" uid="uid://dcrc6mdnjmxqh" path="res://Arbol de Escenas/Menu/Assets/0-STATIC/1.png" id="6_yg8tr"]
 [ext_resource type="Texture2D" uid="uid://dgdbs3cm6b7in" path="res://Arbol de Escenas/Menu/Assets/0-STATIC/2.png" id="7_u6ow0"]
 [ext_resource type="Texture2D" uid="uid://oni3orl3r11o" path="res://Arbol de Escenas/Menu/Assets/0-STATIC/3.png" id="8_qx7j5"]
@@ -22,20 +21,17 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_vapdi")
+"texture": ExtResource("2_yg8tr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_f32lh")
+"texture": ExtResource("3_u6ow0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_gvwsu")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_50cx3")
+"texture": ExtResource("4_qx7j5")
 }],
 "loop": true,
 "name": &"movimiento",
-"speed": 5.0
+"speed": 2.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ok641"]
@@ -77,19 +73,20 @@ font_size = 44
 script = ExtResource("1_cymlx")
 
 [node name="Animaciones" type="AnimatedSprite2D" parent="."]
-position = Vector2(585.49994, 326.75003)
-scale = Vector2(0.8945312, 0.88263893)
+position = Vector2(561, 316)
+scale = Vector2(0.6322917, 0.57743055)
 sprite_frames = SubResource("SpriteFrames_rg1gn")
 animation = &"movimiento"
-frame_progress = 0.25025174
+frame = 1
+frame_progress = 0.6291148
 
 [node name="estatica" type="AnimatedSprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.4)
-position = Vector2(579, 329.99997)
+position = Vector2(587.00006, 327)
 scale = Vector2(0.90937495, 0.88611114)
 sprite_frames = SubResource("SpriteFrames_ok641")
-frame = 7
-frame_progress = 0.97760046
+frame = 5
+frame_progress = 0.15511012
 
 [node name="NewGame" type="Button" parent="."]
 offset_left = 92.0
