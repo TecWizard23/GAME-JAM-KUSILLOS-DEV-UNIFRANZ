@@ -77,16 +77,15 @@ position = Vector2(561, 316)
 scale = Vector2(0.6322917, 0.57743055)
 sprite_frames = SubResource("SpriteFrames_rg1gn")
 animation = &"movimiento"
-frame = 1
-frame_progress = 0.6291148
+frame_progress = 0.44352368
 
 [node name="estatica" type="AnimatedSprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.4)
-position = Vector2(587.00006, 327)
-scale = Vector2(0.90937495, 0.88611114)
+position = Vector2(558.99994, 320)
+scale = Vector2(0.9499999, 0.8666666)
 sprite_frames = SubResource("SpriteFrames_ok641")
-frame = 5
-frame_progress = 0.15511012
+frame = 7
+frame_progress = 0.31416982
 
 [node name="NewGame" type="Button" parent="."]
 offset_left = 92.0
@@ -103,10 +102,12 @@ offset_bottom = 557.0
 icon = ExtResource("15_pmjf1")
 
 [node name="Set" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(47, 451)
 texture = ExtResource("16_qj61p")
 
 [node name="Set2" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(45, 539)
 texture = ExtResource("16_qj61p")
 

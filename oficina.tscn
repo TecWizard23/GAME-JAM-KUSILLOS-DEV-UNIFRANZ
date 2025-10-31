@@ -1,30 +1,173 @@
-[gd_scene load_steps=5 format=3 uid="uid://b1dv2vqut0xd6"]
+[gd_scene load_steps=28 format=3 uid="uid://b1dv2vqut0xd6"]
 
 [ext_resource type="Script" uid="uid://b1idyq6vi6nxo" path="res://Arbol de Escenas/Oficina/oficina.gd" id="1_ajbn3"]
 [ext_resource type="Texture2D" uid="uid://dsuc2u0rn0bgs" path="res://Arbol de Escenas/Oficina/Assets/3-THE_OFFICE/1-OFFICE.png" id="1_qo6bi"]
+[ext_resource type="Texture2D" uid="uid://dnjcwe530yane" path="res://Arbol de Escenas/Oficina/Assets/3-THE_OFFICE/RIGHT_LIGHT.png" id="2_xaxyv"]
+[ext_resource type="Texture2D" uid="uid://b8fswv1ujfxcr" path="res://Arbol de Escenas/Oficina/Assets/3-THE_OFFICE/FAN/1.png" id="3_u7jcj"]
+[ext_resource type="Texture2D" uid="uid://dmx5hsm0tbfes" path="res://Arbol de Escenas/Oficina/Assets/3-THE_OFFICE/LEFT_LIGHT.png" id="4_l4lrm"]
+[ext_resource type="Texture2D" uid="uid://cw5gt7oytuxkl" path="res://Arbol de Escenas/Oficina/Imagenes/abierta.png" id="5_l3kp0"]
+[ext_resource type="Texture2D" uid="uid://dh1ygle8bx6mx" path="res://Arbol de Escenas/Oficina/Imagenes/semi abierta.png" id="6_t8bjw"]
+[ext_resource type="Texture2D" uid="uid://q3mdmtjweyvm" path="res://Arbol de Escenas/Oficina/Imagenes/puerta cerrada.png" id="7_isgkg"]
+[ext_resource type="Texture2D" uid="uid://8ov1nsfnwfoc" path="res://Arbol de Escenas/Oficina/Assets/3-THE_OFFICE/DOORS/RIGHT/1.png" id="20_cmw8o"]
+[ext_resource type="Texture2D" uid="uid://cmeo0v1bw84il" path="res://Arbol de Escenas/Oficina/Assets/3-THE_OFFICE/DOORS/BUTTONS/LEFT/1-STOPPED.png" id="34_5fyca"]
+[ext_resource type="Texture2D" uid="uid://b04rcume1xd0n" path="res://Arbol de Escenas/Oficina/Assets/3-THE_OFFICE/DOORS/BUTTONS/LEFT/3-LIGHT.png" id="35_7wlw5"]
+[ext_resource type="Texture2D" uid="uid://cxwhxhjv68e1t" path="res://Arbol de Escenas/Oficina/Assets/3-THE_OFFICE/DOORS/BUTTONS/LEFT/2-DOOR.png" id="36_o7c0x"]
+[ext_resource type="Texture2D" uid="uid://4dyrbh8ebljf" path="res://Arbol de Escenas/Oficina/Assets/3-THE_OFFICE/DOORS/BUTTONS/LEFT/4-BOTH.png" id="37_voapa"]
+[ext_resource type="AudioStream" uid="uid://c2rq3i6cu1pig" path="res://Arbol de Escenas/Oficina/Assets/SFXBible_12478.wav" id="38_8basv"]
+[ext_resource type="Texture2D" uid="uid://ylmk6rl7w1t6" path="res://Arbol de Escenas/Oficina/Assets/3-THE_OFFICE/DOORS/BUTTONS/RIGHT/1-STOPPED.png" id="38_hdu66"]
+[ext_resource type="AudioStream" uid="uid://y2or6nlsossm" path="res://Arbol de Escenas/Oficina/Assets/ambience2.wav" id="39_6g2ds"]
+[ext_resource type="Texture2D" uid="uid://ccfy7gfan5aj6" path="res://Arbol de Escenas/Oficina/Assets/3-THE_OFFICE/DOORS/BUTTONS/RIGHT/3-LIGHT.png" id="39_8uwmp"]
+[ext_resource type="Texture2D" uid="uid://ds3kwt1xs0dpo" path="res://Arbol de Escenas/Oficina/Assets/3-THE_OFFICE/DOORS/BUTTONS/RIGHT/2-DOOR.png" id="40_d43yn"]
+[ext_resource type="AudioStream" uid="uid://l6pl6v8mhlix" path="res://Arbol de Escenas/Oficina/Assets/voiceover1c.wav" id="40_f5r35"]
+[ext_resource type="Texture2D" uid="uid://dktm2s1q2bbrx" path="res://Arbol de Escenas/Oficina/Assets/3-THE_OFFICE/DOORS/BUTTONS/RIGHT/4-BOTH.png" id="41_0qib0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qo6bi"]
+size = Vector2(662, 664)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ajbn3"]
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("2_xaxyv")
+}, {
+"duration": 1.0,
 "texture": ExtResource("1_qo6bi")
 }],
 "loop": true,
+"name": &"luzDer",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_l4lrm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_qo6bi")
+}],
+"loop": true,
+"name": &"luzIzq",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_l3kp0")
+}],
+"loop": true,
 "name": &"oficina",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_du2fo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_u7jcj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3pxq2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_l3kp0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_t8bjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_isgkg")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_syb3q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_cmw8o")
+}],
+"loop": false,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g1yil"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_voapa")
+}],
+"loop": true,
+"name": &"ambos",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_5fyca")
+}],
+"loop": true,
+"name": &"apagado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35_7wlw5")
+}],
+"loop": true,
+"name": &"luz",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("36_o7c0x")
+}],
+"loop": true,
+"name": &"puerta",
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qo6bi"]
-size = Vector2(701.5, 664)
+[sub_resource type="SpriteFrames" id="SpriteFrames_yv6a6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("41_0qib0")
+}],
+"loop": true,
+"name": &"ambos",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_hdu66")
+}],
+"loop": true,
+"name": &"apagado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_8uwmp")
+}],
+"loop": true,
+"name": &"luz",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("40_d43yn")
+}],
+"loop": true,
+"name": &"puerta",
+"speed": 5.0
+}]
 
 [node name="Oficina" type="Node2D"]
 script = ExtResource("1_ajbn3")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(594, 330.00003)
-scale = Vector2(1, 0.9166667)
-sprite_frames = SubResource("SpriteFrames_ajbn3")
-animation = &"oficina"
 
 [node name="Camara" type="Node2D" parent="."]
 position = Vector2(1, 3)
@@ -38,16 +181,96 @@ position = Vector2(10, 0)
 [node name="Izq" type="Area2D" parent="Detectores"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detectores/Izq"]
-position = Vector2(101.25, 339)
+position = Vector2(121, 339)
 shape = SubResource("RectangleShape2D_qo6bi")
 
 [node name="Der" type="Area2D" parent="Detectores"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detectores/Der"]
-position = Vector2(1082.5, 342)
+position = Vector2(1057, 337)
 shape = SubResource("RectangleShape2D_qo6bi")
+
+[node name="Animaciones" type="Node2D" parent="."]
+
+[node name="Oficina" type="AnimatedSprite2D" parent="Animaciones"]
+position = Vector2(594, 325.5)
+scale = Vector2(1, 0.6357421)
+sprite_frames = SubResource("SpriteFrames_ajbn3")
+animation = &"oficina"
+frame_progress = 0.2660445
+
+[node name="Ventilador" type="AnimatedSprite2D" parent="Animaciones"]
+visible = false
+position = Vector2(646.5, 371.5)
+scale = Vector2(1.0507247, 0.882653)
+sprite_frames = SubResource("SpriteFrames_du2fo")
+
+[node name="puertaIzq" type="AnimatedSprite2D" parent="Animaciones"]
+position = Vector2(586.5, 330.99997)
+scale = Vector2(0.9882652, 0.6425781)
+sprite_frames = SubResource("SpriteFrames_3pxq2")
+
+[node name="purtaDer" type="AnimatedSprite2D" parent="Animaciones"]
+visible = false
+position = Vector2(1190, 349)
+sprite_frames = SubResource("SpriteFrames_syb3q")
+
+[node name="botones" type="Node2D" parent="."]
+
+[node name="botonizq" type="Button" parent="botones"]
+offset_left = -185.0
+offset_top = 310.0
+offset_right = -137.0
+offset_bottom = 370.0
+
+[node name="botonder" type="Button" parent="botones"]
+visible = false
+offset_left = 1328.0
+offset_top = 314.0
+offset_right = 1370.0
+offset_bottom = 367.0
+
+[node name="luzIzq" type="Button" parent="botones"]
+offset_left = -180.0
+offset_top = 388.0
+offset_right = -144.0
+offset_bottom = 448.0
+
+[node name="luzDer" type="Button" parent="botones"]
+visible = false
+offset_left = 1331.0
+offset_top = 391.0
+offset_right = 1371.0
+offset_bottom = 450.0
+
+[node name="btnizq" type="AnimatedSprite2D" parent="botones"]
+position = Vector2(-166, 378)
+sprite_frames = SubResource("SpriteFrames_g1yil")
+animation = &"apagado"
+frame_progress = 0.44748315
+
+[node name="btnder" type="AnimatedSprite2D" parent="botones"]
+visible = false
+position = Vector2(1353, 382)
+sprite_frames = SubResource("SpriteFrames_yv6a6")
+animation = &"luz"
+
+[node name="Audios" type="Node2D" parent="."]
+
+[node name="puerta" type="AudioStreamPlayer2D" parent="Audios"]
+stream = ExtResource("38_8basv")
+
+[node name="ambiente" type="AudioStreamPlayer2D" parent="Audios"]
+stream = ExtResource("39_6g2ds")
+
+[node name="llamada" type="AudioStreamPlayer2D" parent="Audios"]
+stream = ExtResource("40_f5r35")
 
 [connection signal="mouse_entered" from="Detectores/Izq" to="." method="_on_izq_mouse_entered"]
 [connection signal="mouse_exited" from="Detectores/Izq" to="." method="_on_izq_mouse_exited"]
 [connection signal="mouse_entered" from="Detectores/Der" to="." method="_on_der_mouse_entered"]
 [connection signal="mouse_exited" from="Detectores/Der" to="." method="_on_der_mouse_exited"]
+[connection signal="pressed" from="botones/botonizq" to="." method="_on_botonizq_pressed"]
+[connection signal="pressed" from="botones/botonder" to="." method="_on_botonder_pressed"]
+[connection signal="pressed" from="botones/luzIzq" to="." method="_on_luz_izq_pressed"]
+[connection signal="pressed" from="botones/luzDer" to="." method="_on_luz_der_pressed"]
