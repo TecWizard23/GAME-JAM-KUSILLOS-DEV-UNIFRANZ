@@ -1,5 +1,21 @@
-[gd_scene format=3 uid="uid://cqr7sywpdotsq"]
+[gd_scene load_steps=3 format=3 uid="uid://cqr7sywpdotsq"]
+
+[ext_resource type="Texture2D" uid="uid://bet373ydkucrd" path="res://Arbol de Escenas/Oficina/Assets/1-STAGE.png" id="1_u5ip3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uga7d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_u5ip3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="camara" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(578, 323.5)
+scale = Vector2(0.71875, 0.8958333)
+sprite_frames = SubResource("SpriteFrames_uga7d")
