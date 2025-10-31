@@ -1,0 +1,139 @@
+[gd_scene load_steps=21 format=3 uid="uid://bg2j0lawbb7n0"]
+
+[ext_resource type="Script" uid="uid://ddq68xtxmv3yn" path="res://Arbol de Escenas/Menu/menu.gd" id="1_cymlx"]
+[ext_resource type="Texture2D" uid="uid://dw7cgtss54emq" path="res://Arbol de Escenas/Menu/Assets/2-MENU_TWITCHING/1.png" id="2_vapdi"]
+[ext_resource type="Texture2D" uid="uid://gabw68r48mid" path="res://Arbol de Escenas/Menu/Assets/2-MENU_TWITCHING/2.png" id="3_f32lh"]
+[ext_resource type="Texture2D" uid="uid://b2jl8pj3lpug0" path="res://Arbol de Escenas/Menu/Assets/2-MENU_TWITCHING/3.png" id="4_gvwsu"]
+[ext_resource type="Texture2D" uid="uid://ch0a4tbaebr0u" path="res://Arbol de Escenas/Menu/Assets/2-MENU_TWITCHING/4.png" id="5_50cx3"]
+[ext_resource type="Texture2D" uid="uid://dcrc6mdnjmxqh" path="res://Arbol de Escenas/Menu/Assets/0-STATIC/1.png" id="6_yg8tr"]
+[ext_resource type="Texture2D" uid="uid://dgdbs3cm6b7in" path="res://Arbol de Escenas/Menu/Assets/0-STATIC/2.png" id="7_u6ow0"]
+[ext_resource type="Texture2D" uid="uid://oni3orl3r11o" path="res://Arbol de Escenas/Menu/Assets/0-STATIC/3.png" id="8_qx7j5"]
+[ext_resource type="Texture2D" uid="uid://bimbqix6il6pq" path="res://Arbol de Escenas/Menu/Assets/0-STATIC/4.png" id="9_l11kq"]
+[ext_resource type="Texture2D" uid="uid://dua6u1exxa3b6" path="res://Arbol de Escenas/Menu/Assets/0-STATIC/5.png" id="10_uuhv0"]
+[ext_resource type="Texture2D" uid="uid://c8gletu6e6hks" path="res://Arbol de Escenas/Menu/Assets/0-STATIC/6.png" id="11_o3hdp"]
+[ext_resource type="Texture2D" uid="uid://cwtfs74kmxqel" path="res://Arbol de Escenas/Menu/Assets/0-STATIC/7.png" id="12_q6j7j"]
+[ext_resource type="Texture2D" uid="uid://e58q0uulcokv" path="res://Arbol de Escenas/Menu/Assets/0-STATIC/8.png" id="13_n13yt"]
+[ext_resource type="Texture2D" uid="uid://chd2oljyh04ah" path="res://Arbol de Escenas/Menu/Assets/1-MAIN_TEXT/BUTTON01.png" id="14_pudx0"]
+[ext_resource type="Texture2D" uid="uid://pd3hdcsrm7mc" path="res://Arbol de Escenas/Menu/Assets/1-MAIN_TEXT/BUTTON02.png" id="15_pmjf1"]
+[ext_resource type="Texture2D" uid="uid://d3nyr8564jd0y" path="res://Arbol de Escenas/Menu/Assets/1-MAIN_TEXT/SET_.png" id="16_qj61p"]
+[ext_resource type="AudioStream" uid="uid://dbc25a6xb4vwf" path="res://Arbol de Escenas/Menu/Assets/darkness music.wav" id="17_u6ow0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rg1gn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vapdi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f32lh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gvwsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_50cx3")
+}],
+"loop": true,
+"name": &"movimiento",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ok641"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_yg8tr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_u6ow0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qx7j5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_l11kq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_uuhv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_o3hdp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_q6j7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_n13yt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dmb06"]
+font_size = 44
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_cymlx")
+
+[node name="Animaciones" type="AnimatedSprite2D" parent="."]
+position = Vector2(585.49994, 326.75003)
+scale = Vector2(0.8945312, 0.88263893)
+sprite_frames = SubResource("SpriteFrames_rg1gn")
+animation = &"movimiento"
+frame_progress = 0.25025174
+
+[node name="estatica" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.4)
+position = Vector2(579, 329.99997)
+scale = Vector2(0.90937495, 0.88611114)
+sprite_frames = SubResource("SpriteFrames_ok641")
+frame = 7
+frame_progress = 0.97760046
+
+[node name="NewGame" type="Button" parent="."]
+offset_left = 92.0
+offset_top = 431.0
+offset_right = 303.0
+offset_bottom = 473.0
+icon = ExtResource("14_pudx0")
+
+[node name="Continue" type="Button" parent="."]
+offset_left = 91.0
+offset_top = 515.0
+offset_right = 303.0
+offset_bottom = 557.0
+icon = ExtResource("15_pmjf1")
+
+[node name="Set" type="Sprite2D" parent="."]
+position = Vector2(47, 451)
+texture = ExtResource("16_qj61p")
+
+[node name="Set2" type="Sprite2D" parent="."]
+position = Vector2(45, 539)
+texture = ExtResource("16_qj61p")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 418.0
+offset_bottom = 273.0
+text = "Five 
+Nights 
+At Silbaco "
+label_settings = SubResource("LabelSettings_dmb06")
+
+[node name="tiempo" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="AudioFondo" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_u6ow0")
+autoplay = true
+
+[connection signal="mouse_entered" from="NewGame" to="." method="_on_new_game_mouse_entered"]
+[connection signal="mouse_exited" from="NewGame" to="." method="_on_new_game_mouse_exited"]
+[connection signal="mouse_entered" from="Continue" to="." method="_on_continue_mouse_entered"]
+[connection signal="mouse_exited" from="Continue" to="." method="_on_continue_mouse_exited"]
+[connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]
+[connection signal="timeout" from="tiempo" to="." method="_on_tiempo_timeout"]
