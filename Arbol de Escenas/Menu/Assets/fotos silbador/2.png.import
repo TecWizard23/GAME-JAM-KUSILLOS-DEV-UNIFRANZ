@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgcjv0okbr53o"
-path="res://.godot/imported/silbador.jpg-6df3641624ef75257470bff5c3100f2b.ctex"
+uid="uid://di8x3xajl2y8o"
+path="res://.godot/imported/2.png-1b190e4634c799c0d1cd857381ad35d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arbol de Escenas/Menu/Assets/fotos silbador/silbador.jpg"
-dest_files=["res://.godot/imported/silbador.jpg-6df3641624ef75257470bff5c3100f2b.ctex"]
+source_file="res://Arbol de Escenas/Menu/Assets/fotos silbador/2.png"
+dest_files=["res://.godot/imported/2.png-1b190e4634c799c0d1cd857381ad35d3.ctex"]
 
 [params]
 
