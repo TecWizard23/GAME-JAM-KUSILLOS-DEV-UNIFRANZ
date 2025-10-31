@@ -1,3 +1,63 @@
-[gd_scene format=3 uid="uid://cv6a2vcv7kraj"]
+[gd_scene load_steps=13 format=3 uid="uid://cv6a2vcv7kraj"]
+
+[ext_resource type="Texture2D" uid="uid://bbjrywsh71gf" path="res://Arbol de Escenas/Oficina/monitor/MONITOR_ANIMATION/1.png" id="1_ddvre"]
+[ext_resource type="Texture2D" uid="uid://ca6foclgkrnsv" path="res://Arbol de Escenas/Oficina/monitor/MONITOR_ANIMATION/2.png" id="2_r34tb"]
+[ext_resource type="Texture2D" uid="uid://cpsshbvq3ycl8" path="res://Arbol de Escenas/Oficina/monitor/MONITOR_ANIMATION/3.png" id="3_ytwv1"]
+[ext_resource type="Texture2D" uid="uid://d0yilk8xxhdp5" path="res://Arbol de Escenas/Oficina/monitor/MONITOR_ANIMATION/4.png" id="4_cmxun"]
+[ext_resource type="Texture2D" uid="uid://bnpigoeyl3ser" path="res://Arbol de Escenas/Oficina/monitor/MONITOR_ANIMATION/5.png" id="5_7agj7"]
+[ext_resource type="Texture2D" uid="uid://cq3ysf80vp80y" path="res://Arbol de Escenas/Oficina/monitor/MONITOR_ANIMATION/6.png" id="6_7p57k"]
+[ext_resource type="Texture2D" uid="uid://5dlhulbbdmjp" path="res://Arbol de Escenas/Oficina/monitor/MONITOR_ANIMATION/7.png" id="7_getj8"]
+[ext_resource type="Texture2D" uid="uid://h34tu7kjlpd0" path="res://Arbol de Escenas/Oficina/monitor/MONITOR_ANIMATION/8.png" id="8_140ra"]
+[ext_resource type="Texture2D" uid="uid://b7hflvv560q5f" path="res://Arbol de Escenas/Oficina/monitor/MONITOR_ANIMATION/9.png" id="9_0ub72"]
+[ext_resource type="Texture2D" uid="uid://c2011qclqannn" path="res://Arbol de Escenas/Oficina/monitor/MONITOR_ANIMATION/10.png" id="10_o582j"]
+[ext_resource type="Texture2D" uid="uid://d2ler0fxkv8rh" path="res://Arbol de Escenas/Oficina/monitor/MONITOR_ANIMATION/11.png" id="11_6rayp"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lxjd3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ddvre")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_r34tb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ytwv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cmxun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7agj7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7p57k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_getj8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_140ra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_0ub72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_o582j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_6rayp")
+}],
+"loop": false,
+"name": &"default",
+"speed": 25.0
+}]
 
 [node name="Monitor" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(577, 322.5)
+scale = Vector2(0.8953125, 0.8986111)
+sprite_frames = SubResource("SpriteFrames_lxjd3")
+frame = 10
+frame_progress = 1.0

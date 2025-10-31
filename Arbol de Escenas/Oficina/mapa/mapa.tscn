@@ -1,13 +1,178 @@
-[gd_scene format=3 uid="uid://bkb1m04yw0mxw"]
+[gd_scene load_steps=14 format=3 uid="uid://bkb1m04yw0mxw"]
+
+[ext_resource type="Texture2D" uid="uid://den8kr5id2c5k" path="res://Arbol de Escenas/Oficina/mapa/1-MAP.png" id="1_gmqa0"]
+[ext_resource type="Texture2D" uid="uid://da0v5si6qhkx0" path="res://Arbol de Escenas/Oficina/mapa/CAM_BUTTONS/1-CAM 1A.png" id="2_gu5qk"]
+[ext_resource type="Texture2D" uid="uid://c5865niiadn8w" path="res://Arbol de Escenas/Oficina/mapa/CAM_BUTTONS/CAM_PRESSED2 (switch animation sequence).png" id="3_3e5y1"]
+[ext_resource type="Texture2D" uid="uid://f5f4g2owx2wf" path="res://Arbol de Escenas/Oficina/mapa/CAM_BUTTONS/1-CAM 1B.png" id="4_r1qqp"]
+[ext_resource type="Texture2D" uid="uid://yja2iklfkmxu" path="res://Arbol de Escenas/Oficina/mapa/CAM_BUTTONS/5-CAM 5.png" id="5_lc2pi"]
+[ext_resource type="Texture2D" uid="uid://d163rogbxbr6k" path="res://Arbol de Escenas/Oficina/mapa/CAM_BUTTONS/1-CAM 1C.png" id="6_3ylcr"]
+[ext_resource type="Texture2D" uid="uid://30sylw0cosjn" path="res://Arbol de Escenas/Oficina/mapa/CAM_BUTTONS/3-CAM 3.png" id="7_kuehn"]
+[ext_resource type="Texture2D" uid="uid://dciisnbx5wmbv" path="res://Arbol de Escenas/Oficina/mapa/CAM_BUTTONS/2-CAM 2A.png" id="8_7tdkk"]
+[ext_resource type="Texture2D" uid="uid://bqygeib7lgdbj" path="res://Arbol de Escenas/Oficina/mapa/CAM_BUTTONS/2-CAM 2B.png" id="9_sdwmb"]
+[ext_resource type="Texture2D" uid="uid://dhb6245e7526x" path="res://Arbol de Escenas/Oficina/mapa/CAM_BUTTONS/4-CAM 4A.png" id="10_ajoa7"]
+[ext_resource type="Texture2D" uid="uid://bxlynu5icw887" path="res://Arbol de Escenas/Oficina/mapa/CAM_BUTTONS/4-CAM 4B.png" id="11_ig4fo"]
+[ext_resource type="Texture2D" uid="uid://b7bmiuvn28ip5" path="res://Arbol de Escenas/Oficina/mapa/CAM_BUTTONS/6-CAM 6.png" id="12_det83"]
+[ext_resource type="Texture2D" uid="uid://7p6x41i0s8jc" path="res://Arbol de Escenas/Oficina/mapa/CAM_BUTTONS/7-CAM 7.png" id="13_pmpon"]
 
 [node name="Mapa" type="Node2D"]
+position = Vector2(3, -2)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Button" type="Button" parent="CanvasLayer"]
-offset_left = 674.0
-offset_top = 263.0
-offset_right = 724.0
-offset_bottom = 310.0
+[node name="Mapa" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(917, 409)
+texture = ExtResource("1_gmqa0")
 
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Button"]
+[node name="stage" type="Button" parent="CanvasLayer"]
+offset_left = 878.0
+offset_top = 235.0
+offset_right = 917.0
+offset_bottom = 268.0
+icon = ExtResource("2_gu5qk")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/stage"]
+visible = false
+modulate = Color(1, 1, 1, 0.6431373)
+position = Vector2(18.500004, 17)
+scale = Vector2(0.7500002, 1)
+texture = ExtResource("3_3e5y1")
+
+[node name="dinner" type="Button" parent="CanvasLayer"]
+offset_left = 824.0
+offset_top = 287.0
+offset_right = 863.0
+offset_bottom = 320.0
+icon = ExtResource("4_r1qqp")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/dinner"]
+visible = false
+modulate = Color(1, 1, 1, 0.6431373)
+position = Vector2(18.500004, 17)
+scale = Vector2(0.7500002, 1)
+texture = ExtResource("3_3e5y1")
+
+[node name="BackStage" type="Button" parent="CanvasLayer"]
+offset_left = 708.0
+offset_top = 318.0
+offset_right = 747.0
+offset_bottom = 351.0
+icon = ExtResource("5_lc2pi")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/BackStage"]
+visible = false
+modulate = Color(1, 1, 1, 0.6431373)
+position = Vector2(18.500004, 17)
+scale = Vector2(0.7500002, 1)
+texture = ExtResource("3_3e5y1")
+
+[node name="PirateCave" type="Button" parent="CanvasLayer"]
+offset_left = 769.0
+offset_top = 364.0
+offset_right = 808.0
+offset_bottom = 397.0
+icon = ExtResource("6_3ylcr")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/PirateCave"]
+visible = false
+modulate = Color(1, 1, 1, 0.6431373)
+position = Vector2(18.500004, 17)
+scale = Vector2(0.7500002, 1)
+texture = ExtResource("3_3e5y1")
+
+[node name="supplyCloset" type="Button" parent="CanvasLayer"]
+offset_left = 754.0
+offset_top = 463.0
+offset_right = 793.0
+offset_bottom = 496.0
+icon = ExtResource("7_kuehn")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/supplyCloset"]
+visible = false
+modulate = Color(1, 1, 1, 0.6431373)
+position = Vector2(18.500004, 17)
+scale = Vector2(0.7500002, 1)
+texture = ExtResource("3_3e5y1")
+
+[node name="westHall2" type="Button" parent="CanvasLayer"]
+offset_left = 843.0
+offset_top = 487.0
+offset_right = 882.0
+offset_bottom = 520.0
+icon = ExtResource("8_7tdkk")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/westHall2"]
+visible = false
+modulate = Color(1, 1, 1, 0.6431373)
+position = Vector2(18.500004, 17)
+scale = Vector2(0.7500002, 1)
+texture = ExtResource("3_3e5y1")
+
+[node name="WestCorner" type="Button" parent="CanvasLayer"]
+offset_left = 843.0
+offset_top = 524.0
+offset_right = 882.0
+offset_bottom = 557.0
+icon = ExtResource("9_sdwmb")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/WestCorner"]
+visible = false
+modulate = Color(1, 1, 1, 0.6431373)
+position = Vector2(18.500004, 17)
+scale = Vector2(0.7500002, 1)
+texture = ExtResource("3_3e5y1")
+
+[node name="eastHall" type="Button" parent="CanvasLayer"]
+offset_left = 909.0
+offset_top = 487.0
+offset_right = 948.0
+offset_bottom = 520.0
+icon = ExtResource("10_ajoa7")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/eastHall"]
+visible = false
+modulate = Color(1, 1, 1, 0.6431373)
+position = Vector2(18.500004, 17)
+scale = Vector2(0.7500002, 1)
+texture = ExtResource("3_3e5y1")
+
+[node name="EastCorner" type="Button" parent="CanvasLayer"]
+offset_left = 909.0
+offset_top = 524.0
+offset_right = 948.0
+offset_bottom = 557.0
+icon = ExtResource("11_ig4fo")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/EastCorner"]
+visible = false
+modulate = Color(1, 1, 1, 0.6431373)
+position = Vector2(18.500004, 17)
+scale = Vector2(0.7500002, 1)
+texture = ExtResource("3_3e5y1")
+
+[node name="Kitchen" type="Button" parent="CanvasLayer"]
+offset_left = 1045.0
+offset_top = 445.0
+offset_right = 1084.0
+offset_bottom = 478.0
+icon = ExtResource("12_det83")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Kitchen"]
+visible = false
+modulate = Color(1, 1, 1, 0.6431373)
+position = Vector2(18.500004, 17)
+scale = Vector2(0.7500002, 1)
+texture = ExtResource("3_3e5y1")
+
+[node name="RestRooms" type="Button" parent="CanvasLayer"]
+offset_left = 1035.0
+offset_top = 319.0
+offset_right = 1074.0
+offset_bottom = 352.0
+icon = ExtResource("13_pmpon")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/RestRooms"]
+visible = false
+modulate = Color(1, 1, 1, 0.6431373)
+position = Vector2(18.500004, 17)
+scale = Vector2(0.7500002, 1)
+texture = ExtResource("3_3e5y1")
